@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [contacts, setContacts] = useState([]);
@@ -17,10 +18,7 @@ const App = () => {
           <h1>Responsive Contact Cards</h1>
           <div className="contactCards">
             {contacts.map((contact) => (
-              <div key={contact} className="card">
-                <h3>{contact.name}</h3>
-                <p>{contact.phone}</p>
-              </div>
+              <Contact contact ={contact} />
             ))}
           </div>
         </div>
