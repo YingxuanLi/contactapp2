@@ -18,7 +18,7 @@ const App = () => {
           <h1>Responsive Contact Cards</h1>
           <div className="contactCards">
             {contacts.map((contact) => (
-              <Contact contact={contact} key={contact.phone} />
+              <Contact contact={contact} key={contact.id} />
             ))}
           </div>
         </div>
