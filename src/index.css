@@ -38,37 +38,3 @@ h1 {
   justify-content: space-between;
 }
 
-.card {
-  display: 0 0 calc(33.33% - 20px);
-  max-width: calc(33.33% - 20px);
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 5px;
-  transition: 0.5s;
-  border: 2px solid transparent;
-}
-
-.card:hover {
-  border-color: #ff6600;
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 20px;
-  }
-  .card {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 600px) {
-  .card {
-    flex: 0 0 calc(100%);
-    max-width: calc(100%);
-    align-items: center;
-    text-align: center;
-  }
-}
