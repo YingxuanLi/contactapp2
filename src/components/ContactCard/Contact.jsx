@@ -5,7 +5,7 @@ import "./index.css";
 const Contact = (props) => {
   const { contact } = props;
   return (
-    <div key={contact} className="card">
+    <div className="card">
       <h3>{contact.name}</h3>
       <p>{contact.phone}</p>
     </div>
